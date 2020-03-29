@@ -2,48 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Great Blog</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="container">
+    <div id="page-container">
         <header id="home">
             <h1>Welcome to my great Blog</h1>
             <p><em>This is the great blog you ever seen</em></p>
         </header>
         <nav id="navbar">
             <!-- nav bard  -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#posts">Posts</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#home" class="nav-btn">Home</a>
+            <a href="#about" class="nav-btn">About</a>
+            <a href="#posts" class="nav-btn">Posts</a>
+            <a href="#contact" class="nav-btn">Contact</a>
         </nav>
         <section id="posts">
             <!-- cards elements for blog posts -->
             <div id="cards-container">
                 <div class="card">
-                    <img src="img/avatar1.png" alt="avatar" class="card-img" >
+                    <img src="img/post1.jpg" alt="avatar" class="card-img" >
                     <div class="card-info">
-                        <h4><strong>John Doe</strong></h4> 
-                        <p><em>Architect & Engineer</em></p>
+                        <h4><strong>Post I</strong></h4> 
+                        <p><em>Lorem, ipsum.
+                        Temporibus, adipisci!
+                        Ducimus, laboriosam.
+                        Porro, assumenda.</em></p>
                         <button>Read more</button> 
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/avatar2.png" alt="avatar" class="card-img" >
+                    <img src="img/post2.jpg" alt="avatar" class="card-img" >
                     <div class="card-info">
-                        <h4><strong>John Doe</strong></h4> 
-                        <p><em>Architect & Engineer</em></p>
+                        <h4><strong>Post II</strong></h4> 
+                        <p><em>Lorem, ipsum dolor.
+                        Neque, accusantium eaque?
+                        Ab, eveniet rem?
+                        Aliquid, numquam neque.</em></p>
                         <button>Read more</button>   
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/avatar3.png" alt="avatar" class="card-img" >
+                    <img src="img/post3.jpg" alt="avatar" class="card-img" >
                     <div class="card-info">
-                        <h4><b>John Doe</b></h4> 
-                        <p><em>Architect & Engineer</em></p>
+                        <h4><b>Post III</b></h4> 
+                        <p><em>Lorem, ipsum dolor.
+                        Ullam, ratione eius.
+                        Reiciendis, magnam mollitia.
+                        Eveniet, distinctio expedita?</em></p>
                         <button>Read more</button> 
                     </div>
                 </div>
@@ -51,16 +59,43 @@
         </section>
         <section id="about">
             <!-- about -->
-
-            
+            <h2>About us</h2>
+            <p id="about-txt"><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Officia, quibusdam. Perspiciatis, odit?
+            Deleniti, vero suscipit quam perferendis eius iure nisi delectus voluptatum sunt nobis?
+            Illum quia exercitationem doloremque tempore ducimus veniam aliquid, alias fugiat aliquam ad?
+            Rem, laudantium expedita in magnam ratione iusto unde est suscipit exercitationem qui?
+            Eligendi expedita rem architecto reprehenderit? <span>Magnam exercitationem maiores odio esse perferendis impedit.
+            A, modi beatae ut mollitia quos veritatis aperiam quidem? Nesciunt, debitis nihil?</span> 
+            Quod aspernatur repudiandae expedita quae temporibus rerum vero voluptate adipisci reiciendis voluptatibus.
+            Inventore reiciendis molestiae ducimus assumenda ipsum voluptates autem culpa non tenetur quae.
+            Officiis maxime hic consequatur reiciendis rerum, animi unde voluptatibus quas tempora debitis?
+            Sed animi ipsa voluptas repellendus dicta nam aspernatur debitis rerum nisi asperiores.
+            Quis, tempore laudantium iusto quos soluta aspernatur vero sit odio fugit nam?
+            Quod optio maiores doloribus reiciendis nihil </p>
+           
         </section>
         <section id="contact">
             <!-- contact form -->
-            
+            <div id="form-container">
+                <form id="form">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <textarea name="message" rows="10" cols="30">Enter your message here.</textarea>
+                    <br><br>
+                    <input type="submit">
+                  </form>
+            </div>
         </section>
         <footer id="footer">
             <!-- footer element links to social media -->
-            
+            <h3>&copy; Rudolf </h3>
+            <img src="" alt="facebook">
+            <img src="" alt="instagram">
+            <img src="" alt="twiter">
         </footer>
     </div>
 </body>
