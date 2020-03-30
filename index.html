@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="page-container">
-        <header id="home">
-            <h1>Welcome to my great Blog</h1>
-            <p><em>This is the great blog you ever seen</em></p>
-        </header>
+    <div class="page-container">
         <nav id="navbar">
             <!-- nav bard  -->
             <a href="#home" class="nav-btn">Home</a>
@@ -19,9 +15,13 @@
             <a href="#posts" class="nav-btn">Posts</a>
             <a href="#contact" class="nav-btn">Contact</a>
         </nav>
+        <header id="home">
+            <h1>Welcome to my great Blog</h1>
+            <p><em>This is the great blog you ever seen</em></p>
+        </header>
         <section id="posts">
             <!-- cards elements for blog posts -->
-            <div id="cards-container">
+            <div class="cards-container">
                 <div class="card">
                     <img src="img/post1.jpg" alt="avatar" class="card-img" >
                     <div class="card-info">
@@ -30,7 +30,7 @@
                         Temporibus, adipisci!
                         Ducimus, laboriosam.
                         Porro, assumenda.</em></p>
-                        <button>Read more</button> 
+                        <button><a href="posts/blog-post.html">Read more</a></button>
                     </div>
                 </div>
                 <div class="card">
@@ -41,7 +41,7 @@
                         Neque, accusantium eaque?
                         Ab, eveniet rem?
                         Aliquid, numquam neque.</em></p>
-                        <button>Read more</button>   
+                        <button><a href="posts/blog-post.html">Read more</a></button>   
                     </div>
                 </div>
                 <div class="card">
@@ -52,7 +52,7 @@
                         Ullam, ratione eius.
                         Reiciendis, magnam mollitia.
                         Eveniet, distinctio expedita?</em></p>
-                        <button>Read more</button> 
+                        <button><a href="posts/blog-post.html">Read more</a></button> 
                     </div>
                 </div>
             </div>   
@@ -77,25 +77,52 @@
         <section id="contact">
             <!-- contact form -->
             <div id="form-container">
-                <form id="form">
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <textarea name="message" rows="10" cols="30">Enter your message here.</textarea>
-                    <br><br>
-                    <input type="submit">
+                <form>
+                    <fieldset>
+                        <legend>Contact us</legend>
+                        <ul id="form-box">
+                            <li>
+                                <label for="fname">First name:</label>
+                                <input type="text" id="fname" name="fname"> 
+                            </li>
+                            <li>
+                                <label for="lname">Last name:</label>
+                                <input type="text" id="lname" name="lname">
+                            </li>
+                            <li>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email">
+                            </li>
+                            <li>
+                                <label for="message">Message:</label>
+                                <textarea name="message" rows="10" cols="30">Enter your message here.</textarea>
+                            </li>
+                            <li>
+                                <input type="submit">
+                            </li>
+                        </ul>
+                    </fieldset>
                   </form>
             </div>
         </section>
         <footer id="footer">
             <!-- footer element links to social media -->
             <h3>&copy; Rudolf </h3>
-            <img src="" alt="facebook">
-            <img src="" alt="instagram">
-            <img src="" alt="twiter">
+            <h4>Find us on:</h4>
+            <div id="social-media-box">
+                <div class="social-media-element">
+                    <a href="http://www.facebook.com"><img src="img/fb.png" alt="facebook" class="social-media-img"></a>
+                    <p class="socia-media-txt">Facebook</p>
+                </div>
+                <div class="social-media-element">
+                    <a href="http://www.instagram.com"><img src="img/insta.png" alt="instagram" class="social-media-img"></a>
+                    <p>Instagram</p>
+                </div>
+                <div class="social-media-element">
+                    <a href="http://www.twitter.com"><img src="img/twt.png" alt="twiter" class="social-media-img"></a>
+                    <p>Twitter</p>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
