@@ -1,3 +1,8 @@
+@import "navbar.css";
+@import "header.css";
+@import "cards.css";
+@import "contact.css";
+@import "footer.css";
 
 body{
     font-family: "open sans", sans-serif;
@@ -6,95 +11,28 @@ body{
     display: static;
     color: #084627;
 }
-#page-container{
+
+.page-container{
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: minmax(70px,auto);
     grid-template-areas:
-    "home home home"
     "navbar navbar navbar"
+    "home home home"
     "posts posts posts"
     "about about about"
     "contact contact contact"
-    "footer footer footer"
-    ;
+    "footer footer footer";
     justify-content: center;
     justify-items: center;
-   
 }
-#home{
-    grid-area: home;
-    background-image: url("../img/bg.jpg");
-    width: 100%;
-    height: 150px;
-    text-align: center;
-    font-weight: 200;
-}
-h1{
-    font-weight: 400;
-    font-size: 40px;
-}
-/* new css file for navbar */
-#navbar{
-    grid-area: navbar;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin: 10px;
-}
-.nav-btn{
-    border: 2px solid #15c26b;
-    border-radius: 5px;
-    color: #0e8449;
-    text-decoration: none;
-    padding: 15px;
-    font-size: 24px;
-    font-weight: 700;
-    background-image: linear-gradient(to bottom right, #f9f9fa, #f7f7f8);
-}
-.nav-btn:hover{
-    color: #000;
-    background-image: linear-gradient(to bottom right, #e3f8ed,#0e8412);
-}
-/* new css file for posts */
+/* posts */
 #posts{
     grid-area: posts;
     background-image: linear-gradient(to bottom right, #f9f9fa, #f7f7f8);
     width: 100%;
 }
-#cards-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card{
-    border: 1px solid green;
-    border-radius:20px;
-    width: 350px;
-    box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
-    margin: 10px;
-}
-.card img{
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.card-info{
-    text-align: center;
-}
-button{
-    background-color: #f9f9fa;
-    color: #000;
-    border: 2px solid #4caf50;
-    border-radius: 5px;
-    transition-duration: 0.4s;
-    margin-bottom: 10px;
-}
-button:hover{
-    background-color: #4caf50;
-    color: #f9f9fa;
-}
+
 /* about */
 #about{
     grid-area: about;
@@ -103,6 +41,7 @@ button:hover{
     text-align: center;
     justify-content: center;
 }
+
 #about-txt{
     padding: 20px;
     font-size: 18px;
@@ -110,14 +49,20 @@ button:hover{
 #about-txt span{
     text-decoration: underline;
 }
-/* contact */
-#contact{
-    grid-area: contact;
-    background-image: linear-gradient(to bottom right, #f9f9fa, #f7f7f8);
-    width: 100%;
-}
-/* new css file for footer */
-#footer{
-    grid-area: footer;
-    width: 100%;
-}
+
+/* large sreens */
+@media (min-width:1101px) {
+    .page-container{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: minmax(70px,auto);
+        grid-template-areas:
+        "navbar navbar navbar"
+        "home home home"
+        "posts posts posts"
+        "about about contact"
+        "footer footer footer";
+        justify-content: center;
+        justify-items: center;
+    }
+  }

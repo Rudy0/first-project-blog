@@ -1,0 +1,22 @@
+#navbar{
+    grid-area: navbar;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #F9F9FA, #F7F7F8);
+    box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
+}
+
+.nav-btn{
+    color: #0e8449;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-btn:hover{
+    color: #000;
+}
